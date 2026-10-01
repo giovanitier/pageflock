@@ -1,0 +1,50 @@
+@import "./marketing.css";
+@import "./product-shell.css";
+@import "./product-signals.css";
+@import "./product-views.css";
+@import "./responsive.css";
+
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --surface-subtle: #fafaf8;
+  --ink: #181816;
+  --muted: #73736e;
+  --muted-2: #a0a09a;
+  --line: #e7e7e2;
+  --line-strong: #d9d9d3;
+  --blue: #315efb;
+  --blue-soft: #eef2ff;
+  --green: #1f8f5f;
+  --green-soft: #eaf8f1;
+  --amber: #9b6a10;
+  --amber-soft: #fff6df;
+  --red: #bd3d45;
+  --red-soft: #fff0f1;
+  --radius: 14px;
+  --shadow: 0 1px 1px rgba(18, 18, 16, 0.02), 0 8px 30px rgba(18, 18, 16, 0.035);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -0.012em; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button { color: inherit; }
+
+.brand-mark { width: 24px; height: 20px; display: inline-flex; align-items: end; gap: 3px; }
+.brand-mark span { display: block; width: 6px; border-radius: 5px 5px 2px 2px; background: var(--ink); }
+.brand-mark span:nth-child(1) { height: 10px; }
+.brand-mark span:nth-child(2) { height: 17px; }
+.brand-mark span:nth-child(3) { height: 13px; }
+
+.primary-button, .secondary-button { border: 0; min-height: 42px; padding: 0 16px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 650; font-size: 14px; cursor: pointer; transition: transform .18s ease, background .18s ease, border-color .18s ease; }
+.primary-button { background: var(--ink); color: white; }
+.primary-button:hover { transform: translateY(-1px); background: #000; }
+.primary-button.compact { min-height: 36px; padding: 0 13px; font-size: 13px; border-radius: 9px; }
+.secondary-button { background: var(--surface); border: 1px solid var(--line-strong); }
+.secondary-button:hover { border-color: #bebeb6; }
+.text-button { border: 0; background: transparent; padding: 6px; display: inline-flex; gap: 5px; align-items: center; color: var(--muted); cursor: pointer; font-size: 13px; }
+.text-button:hover { color: var(--ink); }
+.eyebrow, .panel-kicker { text-transform: uppercase; letter-spacing: .095em; font-size: 10px; font-weight: 750; color: var(--muted); }
