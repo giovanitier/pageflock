@@ -1,0 +1,42 @@
+/* Marketing */
+.marketing-shell { min-height: 100vh; background: #fbfbf8; }
+.marketing-nav { width: min(1180px, calc(100% - 48px)); height: 74px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.marketing-brand { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+.marketing-links { display: flex; align-items: center; gap: 28px; font-size: 13px; color: var(--muted); }
+.marketing-links a:hover { color: var(--ink); }
+.hero { width: min(1180px, calc(100% - 48px)); min-height: 690px; margin: 0 auto; display: grid; grid-template-columns: .86fr 1.14fr; gap: 82px; align-items: center; padding: 70px 0 90px; }
+.hero-copy h1 { margin: 14px 0 24px; font-size: clamp(58px, 7vw, 92px); line-height: .92; letter-spacing: -.065em; font-weight: 680; max-width: 620px; }
+.hero-copy > p { font-size: 18px; line-height: 1.55; color: var(--muted); max-width: 530px; }
+.hero-actions { display: flex; gap: 10px; margin-top: 32px; }
+.hero-product { perspective: 1000px; }
+.mini-window { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 30px 80px rgba(28, 28, 23, .12); overflow: hidden; transform: rotateY(-2deg) rotateX(1deg); }
+.mini-window-top { height: 58px; border-bottom: 1px solid var(--line); padding: 0 18px; display: grid; grid-template-columns: auto 1fr auto; gap: 11px; align-items: center; font-size: 12px; color: var(--muted); }
+.mini-window-top .brand-mark { transform: scale(.78); transform-origin: left center; }
+.mini-window-top em { font-style: normal; background: var(--surface-subtle); border: 1px solid var(--line); padding: 6px 9px; border-radius: 8px; }
+.mini-signal { padding: 38px 38px 28px; }
+.mini-signal small { color: var(--blue); letter-spacing: .1em; font-weight: 800; font-size: 10px; }
+.mini-signal strong { display: block; font-size: 26px; line-height: 1.15; letter-spacing: -.035em; max-width: 520px; margin: 10px 0 12px; }
+.mini-signal p { color: var(--muted); margin: 0 0 22px; line-height: 1.5; }
+.mini-signal > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.mini-signal > div span { border: 1px solid var(--line); border-radius: 999px; padding: 7px 10px; font-size: 11px; color: var(--muted); }
+.mini-chart { height: 180px; margin: 0 28px 28px; border-top: 1px solid var(--line); position: relative; overflow: hidden; }
+.mini-chart::before, .mini-chart::after { content: ""; position: absolute; left: 0; right: 0; border-top: 1px solid #eeeeea; }
+.mini-chart::before { top: 34%; }.mini-chart::after { top: 68%; }
+.mini-chart-line { position: absolute; inset: 15px 0 0; background: linear-gradient(180deg, rgba(49,94,251,.16), rgba(49,94,251,0) 72%); clip-path: polygon(0 78%,8% 70%,16% 75%,24% 62%,32% 65%,40% 54%,48% 58%,56% 39%,64% 46%,72% 30%,80% 36%,88% 18%,96% 22%,100% 10%,100% 100%,0 100%); }
+.marketing-section { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 120px 0; border-top: 1px solid var(--line); }
+.section-intro { max-width: 690px; }
+.section-intro h2, .closing-cta h2 { font-size: clamp(42px, 5vw, 68px); letter-spacing: -.055em; line-height: .98; margin: 14px 0 20px; font-weight: 650; }
+.section-intro p { color: var(--muted); font-size: 17px; line-height: 1.6; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 76px; border-top: 1px solid var(--line); }
+.feature-grid article { padding: 34px 36px 42px 0; border-right: 1px solid var(--line); }
+.feature-grid article + article { padding-left: 36px; }
+.feature-grid article:last-child { border-right: 0; }
+.feature-icon { width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 11px; display: grid; place-items: center; background: var(--surface); }
+.feature-grid h3 { margin: 52px 0 12px; font-size: 21px; letter-spacing: -.035em; }
+.feature-grid p { color: var(--muted); line-height: 1.6; margin: 0; }
+.principle-section { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+.principle-list { display: flex; flex-direction: column; justify-content: center; }
+.principle-list span { font-size: 18px; padding: 19px 0; border-bottom: 1px solid var(--line); }
+.closing-cta { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 140px 0; text-align: center; border-top: 1px solid var(--line); }
+.closing-cta h2 { margin-left: auto; margin-right: auto; max-width: 800px; }
+.marketing-footer { width: min(1180px, calc(100% - 48px)); margin: 0 auto; padding: 28px 0; border-top: 1px solid var(--line); display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
